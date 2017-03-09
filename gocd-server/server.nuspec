@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>gocd_server</id>
+    <title>GoCD Server</title>
+    <authors>GoCD</authors>
+    <version>0.0.0</version>
+    <owners>GoCD</owners>
+    <summary>Install GoCD Server on Windows</summary>
+    <description>Install GoCD Server on Windows</description>
+    <projectUrl>https://gocd.io/</projectUrl>
+    <tags>gocd cd continuous-delivery</tags>
+    <copyright>Copyright 2017 ThoughtWorks, Inc.</copyright>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/gocd/gocd-chocolatey/master/go_logo.ico</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
