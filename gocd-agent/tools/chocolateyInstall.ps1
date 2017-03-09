@@ -1,6 +1,6 @@
 $packageParameters = Get-PackageParameters
 
-$packageName = 'gocd-agent'
+$packageName = 'gocdagent'
 $installerType = 'exe'
 $version = $env:version
 $revision = $env:revision
@@ -8,9 +8,9 @@ $url = "https://download.gocd.io/binaries/${version}-${revision}/win/go-agent-${
 $url64 = "https://download.gocd.io/binaries/${version}-${revision}/win/go-agent-${version}-${revision}-jre-64bit-setup.exe"
 $args = '/S'
 
-if ($pp["SERVERURL"] -ne $null -or $pp["SERVERURL"] -ne '') { $args += " /SERVERURL=$packageParameters['SERVERURL']" }
-if ($pp["GO_AGENT_JAVA_HOME"] -ne $null -or $pp["GO_AGENT_JAVA_HOME"] -ne '') { $args += " /GO_AGENT_JAVA_HOME=$packageParameters['GO_AGENT_JAVA_HOME']" }
-if ($pp["PATH_TO_AGENT_DIRECTORY"] -ne $null -or $pp["PATH_TO_AGENT_DIRECTORY"] -ne '') { $args += " /D=$packageParameters['PATH_TO_AGENT_DIRECTORY']" }
+if ($packageParameters["SERVERURL"] -ne $null -or $packageParameters["SERVERURL"] -ne '') { $args += " /SERVERURL=$packageParameters['SERVERURL']" }
+if ($packageParameters["GO_AGENT_JAVA_HOME"] -ne $null -or $packageParameters["GO_AGENT_JAVA_HOME"] -ne '') { $args += " /GO_AGENT_JAVA_HOME=$packageParameters['GO_AGENT_JAVA_HOME']" }
+if ($packageParameters["PATH_TO_AGENT_DIRECTORY"] -ne $null -or $packageParameters["PATH_TO_AGENT_DIRECTORY"] -ne '') { $args += " /D=$packageParameters['PATH_TO_AGENT_DIRECTORY']" }
 
 $validExitCodes = @(0)
 
