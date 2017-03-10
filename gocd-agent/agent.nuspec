@@ -14,9 +14,6 @@
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/gocd/gocd-chocolatey/master/go_logo.ico</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
