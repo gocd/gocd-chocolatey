@@ -7,7 +7,18 @@
     <version>0.0.0</version>
     <owners>GoCD</owners>
     <summary>Install GoCD Agent on Windows</summary>
-    <description>Install GoCD Agent on Windows</description>
+     <description>
+Installs GoCD agent on Windows
+
+#### Install Arguments
+The following install arguments can be set:
+
+ * `/SERVERURL` - The go server url to which the agent should connect to. It should be in the format `https://go-server-host:go-server-ssl-port/go`. The value must by surreounded by double quotes.
+ * `/GO_AGENT_JAVA_HOME` - JAVA_HOME
+ * `/D` - the gocd agent working directory
+
+These parameters can be passed to the installer with the use of `--ia`.
+    </description>
     <projectUrl>https://gocd.io/</projectUrl>
     <tags>gocd cd continuous-delivery</tags>
     <copyright>Copyright 2017 ThoughtWorks, Inc.</copyright>

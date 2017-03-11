@@ -7,7 +7,17 @@
     <version>0.0.0</version>
     <owners>GoCD</owners>
     <summary>Install GoCD Server on Windows</summary>
-    <description>Install GoCD Server on Windows</description>
+    <description>
+Installs GoCD Server on Windows
+
+#### Install Arguments
+The following install arguments can be set:
+
+ * `/GO_SERVER_JAVA_HOME` - JAVA_HOME
+ * `/D` - the gocd agent working directory
+
+These parameters can be passed to the installer with the use of `--ia`.
+    </description>
     <projectUrl>https://gocd.io/</projectUrl>
     <tags>gocd cd continuous-delivery</tags>
     <copyright>Copyright 2017 ThoughtWorks, Inc.</copyright>
