@@ -1,10 +1,9 @@
 ## Building package
 
 - ensure Chocolatey is installed.
-- `cd gocd-server|gocd-agent`
 - `$env:version = <version>`
 - `$env:revision = <revision>`
-- `choco pack --version=<version>`
+- `.\createPackage <server|agent>`
 
 ## Pushing to Chocolatey
 

@@ -26,6 +26,6 @@ These parameters can be passed to the installer with the use of `--ia`.
     <iconUrl>https://cdn.rawgit.com/gocd/gocd-chocolatey/43ae0ef2/go-logo-192px.svg</iconUrl>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\chocolateyInstall.ps1" target="tools" />
   </files>
 </package>
