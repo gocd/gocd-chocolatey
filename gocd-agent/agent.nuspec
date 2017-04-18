@@ -3,9 +3,9 @@
   <metadata>
     <id>gocdagent</id>
     <title>GoCD Agent</title>
-    <authors>GoCD</authors>
+    <authors>GoCD Team</authors>
     <version>0.0.0</version>
-    <owners>GoCD</owners>
+    <owners>GoCD Team</owners>
     <summary>Install GoCD Agent on Windows</summary>
      <description>
 Installs GoCD agent on Windows
@@ -20,7 +20,7 @@ The following install arguments can be set:
 These parameters can be passed to the installer with the use of `--ia`.
     </description>
     <projectUrl>https://gocd.io/</projectUrl>
-    <tags>gocd cd continuous-delivery</tags>
+    <tags>gocd cd continuous-delivery admin</tags>
     <copyright>Copyright 2017 ThoughtWorks, Inc.</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
