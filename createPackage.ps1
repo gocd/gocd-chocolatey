@@ -1,8 +1,16 @@
-$version = $env:version
-$revision = $env:revision
-$path = "gocd-" + $args[0]
+param(
+    [string][parameter(mandatory=$true)][ValidateSet("agent", "server")]$type,
+
+    # Note that parameter validation doesn't work for parameter defaults,
+    # so if $env:version or $env:revision are unset, things will probably
+    # fail in some undefined way.
+    [string][parameter()][ValidateNotNullOrEmpty()]$version = $env:version,
+    [string][parameter()][ValidateNotNullOrEmpty()]$revision = $env:revision
+)
+
+$path = "gocd-" + $type
 $fullVersion = $version + "-" + $revision
-$type = $args[0]
+
 cd $path
 $checksumFileContent = (New-Object System.Net.WebClient).DownloadString("https://download.gocd.io/binaries/$fullVersion/win/go-$type-$fullVersion-jre-32bit-setup.exe.sha256sum")
 $checksum32 = $checksumFileContent.Split(" ")[0]
