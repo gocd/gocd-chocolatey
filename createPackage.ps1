@@ -1,3 +1,38 @@
+<#
+    .SYNOPSIS
+        Build NuGet Packages (.nupkg) for GoCD Server or Agent.
+
+    .PARAMETER type
+        The type of package being built--either agent or server.
+
+    .PARAMETER version
+        The release version of the package being built (ie, YY.MM.XX).
+        Defaults to $env:version.
+
+    .PARAMETER revision
+        The build number of the package being built.
+        Defaults to $env:revision
+
+    .EXAMPLE
+        Using environment variables.
+
+        $env:version=17.4.0
+        $env:revision=4892
+        .\createPackage.ps1 server
+        .\createPackage.ps1 agent
+
+    .EXAMPLE
+        Using unnamed arguments.
+
+        .\createPackage.ps1 server 17.4.0 4892
+        .\createPackage.ps1 agent 17.4.0 4892
+
+    .EXAMPLE
+        Using named arguments.
+
+        .\createPackage.ps1 -type server -version 17.4.0 -revision 4892
+        .\createPackage.ps1 -type agent -version 17.4.0 -revision 4892
+#>
 param(
     [string][parameter(mandatory=$true)][ValidateSet("agent", "server")]$type,
 
