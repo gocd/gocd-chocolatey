@@ -8,8 +8,8 @@ param(
     [string][parameter()][ValidateNotNullOrEmpty()]$revision = $env:revision
 )
 
-$path = "gocd-" + $type
-$fullVersion = $version + "-" + $revision
+$path = "gocd-$type"
+$fullVersion = "$version-$revision"
 
 Push-Location $path
 
