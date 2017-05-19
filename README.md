@@ -1,9 +1,20 @@
 ## Building package
 
-- ensure Chocolatey is installed.
-- `$env:version = <version>`
-- `$env:revision = <revision>`
-- `.\createPackage <server|agent>`
+Ensure Chocolatey is installed.
+
+```PowerShell
+$env:version = <version>
+$env:revision = <revision>
+.\createPackage <server|agent>
+```
+
+--or--
+
+```PowerShell
+.\createPackage <server|agent> -version <version> -revision <revision>
+```
+
+Run `help .\createPackage.ps1 -detailed` for more help.
 
 ## Pushing to Chocolatey
 
