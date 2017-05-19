@@ -1,12 +1,17 @@
-$packageName = 'gocdserver'
-$installerType = 'exe'
-$url = "https://download.gocd.io/binaries/{{fullVersion}}/win/go-server-{{fullVersion}}-jre-32bit-setup.exe"
-$checksumType = 'sha256'
-$checksum = "{{checksum-32bit}}"
-$url64 = "https://download.gocd.io/binaries/{{fullVersion}}/win/go-server-{{fullVersion}}-jre-64bit-setup.exe"
-$checksumType64 = 'sha256'
-$checksum64 = "{{checksum-64bit}}"
-$silentArgs = '/S'
-$validExitCodes = @(0)
+$packageArgs = @{
+    packageName        = 'gocdserver'
+    installerType      = 'exe'
 
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes -checksum $checksum -checksumType $checksumType -checksum64 $checksum64 -checksumType64 $checksumType64
+    url                = 'https://download.gocd.io/binaries/{{fullVersion}}/win/go-server-{{fullVersion}}-jre-32bit-setup.exe'
+    checksumType       = 'sha256'
+    checksum           = '{{checksum-32bit}}'
+
+    url64              = 'https://download.gocd.io/binaries/{{fullVersion}}/win/go-server-{{fullVersion}}-jre-64bit-setup.exe'
+    checksumType64     = 'sha256'
+    checksum64         = '{{checksum-64bit}}'
+
+    silentArgs         = '/S'
+    validExitCodes     = @(0)
+}
+
+Install-ChocolateyPackage @packageArgs
