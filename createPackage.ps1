@@ -1,3 +1,5 @@
+#Requires -Version 2.0
+
 <#
     .SYNOPSIS
         Build NuGet Packages (.nupkg) for GoCD Server or Agent.
