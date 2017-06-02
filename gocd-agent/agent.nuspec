@@ -19,8 +19,8 @@ The following install arguments can be set:
 
 These parameters can be passed to the installer with the use of `--ia`.
     </description>
-    <projectUrl>https://gocd.io</projectUrl>
-    <docsUrl>https://docs.gocd.io</docsUrl>
+    <projectUrl>https://gocd.org</projectUrl>
+    <docsUrl>https://docs.gocd.org</docsUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/go-cd</mailingListUrl>
     <bugTrackerUrl>https://github.com/gocd/gocd/issues</bugTrackerUrl>
     <projectSourceUrl>https://github.com/gocd/gocd</projectSourceUrl>
