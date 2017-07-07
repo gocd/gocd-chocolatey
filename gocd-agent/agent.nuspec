@@ -31,6 +31,7 @@ These parameters can be passed to the installer with the use of `--ia`.
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/gocd/gocd-chocolatey/43ae0ef2/go-logo-192px.svg</iconUrl>
+    <releaseNotes>[CHANGELOG](https://www.gocd.org/releases)</releaseNotes>
   </metadata>
   <files>
     <file src="tools\chocolateyInstall.ps1" target="tools" />
