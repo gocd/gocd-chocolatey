@@ -46,6 +46,13 @@ param(
 )
 
 $path = "gocd-$type"
+
+If ((-Not $version) -and (-Not $revision)) {
+    $json = (Get-Content ..\version.json) | Out-String | ConvertFrom-Json
+    $version = $json.go_version
+    $revision = $json.go_build_number
+}
+
 $fullVersion = "$version-$revision"
 
 Push-Location $path
