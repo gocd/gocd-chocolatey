@@ -14,7 +14,7 @@ Installs GoCD agent on Windows
 The following install arguments can be set:
 
  * `/START_AGENT` - Whether the agent service should start after installation. Set to NO (case-sensitive) to disable starting up the service after installation.
- * `/SERVERURL` - The go server url to which the agent should connect to. It should be in the format `https://go-server-host:go-server-ssl-port/go`. The value must by surreounded by double quotes.
+ * `/SERVERURL` - The go server url to which the agent should connect to. The value must by surreounded by double quotes.
  * `/GO_AGENT_JAVA_HOME` - JAVA_HOME
  * `/D` - the gocd agent working directory
 
