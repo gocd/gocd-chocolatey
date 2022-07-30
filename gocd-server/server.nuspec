@@ -25,7 +25,7 @@ These parameters can be passed to the installer with the use of `--ia`.
     <projectSourceUrl>https://github.com/gocd/gocd</projectSourceUrl>
     <packageSourceUrl>https://github.com/gocd/gocd-chocolatey</packageSourceUrl>
     <tags>gocd cd continuous-delivery admin</tags>
-    <copyright>Copyright 2017 ThoughtWorks, Inc.</copyright>
+    <copyright>Copyright Thoughtworks, Inc.</copyright>
     <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/gocd/gocd-chocolatey/43ae0ef2/go-logo-192px.svg</iconUrl>
